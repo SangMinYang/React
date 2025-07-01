@@ -1,0 +1,15 @@
+.theading{
+    background-color: blueviolet;
+    color: whtie;
+}
+.theading,
+.tdata{
+    width: 150px;
+    border: 1px solid red;
+    padding: 7px 12px;
+    text-align: center;
+}
+.title{
+    padding: 7px 12px;
+}
+

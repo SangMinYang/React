@@ -3,7 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
+ HEAD
 import App02 from './component App';
+
+// import App02 from './component App';
+import App from './component/App4';
+da6cc9 ('처음 커밋')
 //import 는 외부 파일의 함수, 라이브러릴 사용할떄 
 //           미리가져오기.(메모리 로드)
 
