@@ -51,8 +51,11 @@ return (
 ✅ 5. 조건부 렌더링
 
 ```jsx
-{
-  isLoggedIn ? <Logout /> : <Login />;
+{//삼황연산
+  isLoggedIn ? <Logout /> ://(콜론) <Login />; // if (isLoggedIn)
+                                            //<Logout />
+                                            //else
+                                            //<Login />
 }
 ```
 
@@ -60,7 +63,7 @@ return (
 
 ```jsx
 {
-  isAdmin && <AdminPanel />;
+  isAdmin && <AdminPanel />; // 
 }
 ```
 
@@ -68,13 +71,13 @@ return (
 
 ✅ 6. 스타일 적용 방식
 
-```jsx
+```jsx               
 const divStyle = { color: "blue", fontSize: "16px" };
 
 return <div style={divStyle}>Styled Text</div>;
 ```
-
-- style은 객체 형태로 작성 (camelCase 사용)
+//스타일을 정의한 내용을 하나의 객체로 다룹니다
+- style은 객체 형태로 작성 (camelCase 사용-fontsize는 원래CSS에서 font-size)
 
 ✅ 7. 배열/리스트 렌더링
 
@@ -89,8 +92,9 @@ return (
 );
 ```
 
-- JSX 안에서 .map() 사용 가능
-- 반복 요소에는 반드시 key 속성 필요
+- JSX 안에서 .map() 사용 가능.많이쓰는 배열 메소드(filter-조건문-, reduce-연산 누적)
+- !!!!!!반복 요소에는 반드시 key 속성 필요.예시:반복요소는 li,td(ket값)
+-key 로 지정한 값은 중복이 없어야함 
 
 ✅ 8. 주석 사용 방법
 
@@ -118,9 +122,9 @@ return (
 - <React.Fragment> 또는 축약형 <></> 사용
 
 ✅ 10. 컴포넌트 사용
-
+-예전 문법은 클래스형 컴포넌트는 지금은 거의 사용하지 않는다.
 ```jsx
-// 정의
+// 정의 : 함수형 컴포넌트
 function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
@@ -128,10 +132,13 @@ function Welcome(props) {
 
 ```jsx
 <Welcome name="샘" />
+const element =<h1>Helo
+
 ```
 
 - 대문자로 시작하는 태그는 사용자 정의 컴포넌트로 인식됨
-- props를 통해 데이터 전달
+- props를 통해 데이터 전달 : 부모 멐포넌트가 자식 컴포넌트 에게 데이터 전달 할떄
+   ㄴ컴포넌트가 계층 구조로 사용됨에 따라 필요.
 
 ✅ 11. 이벤트 속성
 
@@ -140,7 +147,7 @@ function Welcome(props) {
 ```
 
 - onClick, onChange 등 DOM 이벤트는 camelCase로 작성
-- 이벤트 핸들러는 함수 참조 또는 람다식 사용 가능
+- '이벤트 핸들러'는 함수 참조 또는 람다식(화살표 함수 ) 사용 가능
 
 ✅ 참고: JSX는 결국 JS
 

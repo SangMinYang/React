@@ -1,7 +1,7 @@
 import React from 'react'
 //Day1_06 : 부모컴포넌트가 자식에게 전달하는 데이터(프로퍼티) 연습
 //           부모컴포넌트는 App4
-import '../css/TimeTableH.css'
+import '../css/TimeTablH.css'
 export default function TimeTableH({time, todo, title}) {
  
   
