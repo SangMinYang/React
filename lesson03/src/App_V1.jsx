@@ -55,7 +55,7 @@ function App() {
   }
 
   // todos  할 일 객체 목록 중 삭제하기
-  / /상태변수 tods 변경
+  //상태변수 tods 변경
   function handleRemove(id) {
     // 인자로 전달받은 id값을 갖는 요소 삭제하기
     // 인자 id값이 아닌 요소로만 새로운 배열 만들기
