@@ -36,8 +36,8 @@ function App() {
 
   console.log("todos:", todos);
   const [value, setValue] = useState("");
-
-  function handleChecked(id) {
+// 상태변수 tods 변경
+  function handleChecked(id) { //
     // 배열 자체를 바꿔야 상태 변경됩니다.
     // 배열 특정 요소의 checked 값만 변경한 것을 새로운 배열로 하여 todos 변경
     // ! 연산자는 참은 거짓, 거짓은 참으로 변경
@@ -55,6 +55,7 @@ function App() {
   }
 
   // todos  할 일 객체 목록 중 삭제하기
+  / /상태변수 tods 변경
   function handleRemove(id) {
     // 인자로 전달받은 id값을 갖는 요소 삭제하기
     // 인자 id값이 아닌 요소로만 새로운 배열 만들기
@@ -64,6 +65,7 @@ function App() {
 
   // 🔥 화살표 함수 사용해보기
   // todos 에 할일 객체를 추가
+  // 상태변수 tods 변경
   const handleInsert = (text) => {
     const todo = {
       id: maxid.current,
@@ -79,7 +81,7 @@ function App() {
 
     maxid.current += 1;
   };
-
+  // 🎉이벤트 함수 
   const handleSubmit = (e) => {
     e.preventDefault(); // form 서버 제출 기본 동작을 못하게 막음.
     // 입력값을 할일 목록(배열)에 추가시키는 함수 실행하기
@@ -118,7 +120,7 @@ function App() {
             {/* ListItem을 반복해서 표시 */}
             {/* 항목 삭제 아이콘 TodoListItem 컴포넌트에 있음. */}
             {todos.map((item, idx) => (
-              <div className="TodoListItem" key={idx}>
+              <div className="TodoListItem" key={}>
                 <div
                   className={`checkbox ${item.checked ? "checked" : ""}`}
                   onClick={() => handleChecked(item.id)}
