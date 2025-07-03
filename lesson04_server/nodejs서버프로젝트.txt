@@ -1,0 +1,42 @@
+C:\Class250615\react>mkdir lesson04_server(레슨04서버 폴더 생성)
+
+C:\Class250615\react\cd lesson04_server (레슨 서버 )
+
+C:\Class250615\react\lesson04_server>npm init -y (패키지 json 설치 )
+
+C:\Class250615\react\lesson04_server>npm install express mongodb cors
+
+프로젝트 실행 도구 설치 
+C:\Class250615\react\lesson04_server>npm install -g nodemon
+프로젝트 서버 실행 하기
+C:\Class250615\react\lesson04_server>nodemon webserver.js
+
+API 라우팅 테스트
+1.모든 TOD 데이터 조회하기 : GET 방식, localhost5000/api/todos 주소
+브라우저에서 직접 주소 입력하여 실행
+
+(-X GET 생략가능) CURL 명령어에서 메소드 기본값
+
+2.새로운 todo 데이터 추가: POST 방식.    localhost5000/api/todos주소
+(브라우저에서 테스트 못함.db에게 보낼 데이터 작성해야 함으로 =>curl 명령어 테스트)
+
+주의 윈도우에서는 아래와 같이 기호 사용할것
+curl -X POST http://localhost:5000/api/todos ^
+     -H "Content-Type: application/json" ^
+     -d "{\"text\":\"백엔드 구현하기\"}"
+
+
+     3. 기존 todo 데이터의 checked 속성 수정 : PUT 방식 단 url로 id 값 지정하는 방식
+     curl -X POST http://localhost:5000/api/todos/3 ^
+     -H "Content-Type: application/json" ^
+     -d "{\"text\":\"백엔드 구현하기\"}"
+
+
+
+     curl -X PUT http://localhost:5000/api/todos/3 ^
+  -H "Content-Type: application/json" ^
+  -d "{\"checked\":false}"
+
+
+  4.기존 todo 데이터 삭제 : DELETE 방식. 단 url 로 id 값 지정하는 방식
+  curl -X DELETE https://localhost:5000/api/todos/3
