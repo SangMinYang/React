@@ -1,0 +1,48 @@
+[
+  {
+    "_id": "68661bd885695c0852063fe1",
+    "id": 1,
+    "text": "리액트 수업 복습",
+    "checked": true
+  },
+  {
+    "_id": "68661bd885695c0852063fe2",
+    "id": 2,
+    "text": "리액트 프로젝트 기획",
+    "checked": false
+  },
+  {
+    "_id": "68661bd885695c0852063fe3",
+    "id": 3,
+    "text": "데이터베이스 테스트",
+    "checked": false
+  },
+  {
+    "_id": "686634cf42b5e41e1263cdc9",
+    "id": null,
+    "text": "과제하기",
+    "checked": false,
+    "createdAt": "2025-07-03T07:44:15.395Z"
+  },
+  {
+    "_id": "6866370c692c57ebabd70d4b",
+    "id": null,
+    "text": "백엔드 구현하기",
+    "checked": false,
+    "createdAt": "2025-07-03T07:53:48.882Z"
+  },
+  {
+    "_id": "6866378d692c57ebabd70d4c",
+    "id": null,
+    "text": "과제하기",
+    "checked": false,
+    "createdAt": "2025-07-03T07:55:57.955Z"
+  },
+  {
+    "_id": "686645420f311562bdcd6562",
+    "id": 4,
+    "text": "백엔드 구현하기",
+    "checked": false,
+    "createdAt": "2025-07-03T08:54:26.439Z"
+  }
+]
